@@ -39,12 +39,12 @@ const server = http.createServer((req, res) => {
   if (req.url.startsWith("/api/products") && req.method === "GET") {
     // 準備 5 個 3C 產品
     const products = [
-      { id: 1, name: "手機", price: 12900 },
-      { id: 2, name: "筆電", price: 32900 },
-      { id: 3, name: "平板", price: 15900 },
-      { id: 4, name: "耳機", price: 2990 },
-      { id: 5, name: "螢幕", price: 6990 },
-       { id: 6, name: "Dell大螢幕", price: 12990 },
+      { id: 1, name: "手機", price: 12900, description: "這是一台手機，很好用" },
+      { id: 2, name: "Apple M4 筆電", price: 32900, description: "這是一台筆電，很好用" },
+      { id: 3, name: "平板", price: 15900, description: "這是一台平板，很好用" },
+      { id: 4, name: "耳機", price: 2990, description: "這是一對耳機，很好用" },
+      { id: 5, name: "螢幕", price: 6990, description: "這是一台螢幕，很好用" },
+      { id: 6, name: "Dell 大螢幕", price: 12990, description: "這是一台 Dell 大螢幕，很好用" },
     ];
 
     // 解析 URL 和 query 參數
